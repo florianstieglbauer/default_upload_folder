@@ -14,4 +14,8 @@ default_upload_folders {
     # You can set a default year/month/day folder within the set default folder
     tx_news_domain_model_news.dateformat = 1
     tx_news_domain_model_news = 1:news/{Y}/{n}/{d}
+
+    # You can use page variables like {title}, {subtitle} or {nav_title} to create dynamic folders
+    tt_content.assets.variableformat = 1
+    tt_content.assets = 1:user_upload/{title}/
 }
