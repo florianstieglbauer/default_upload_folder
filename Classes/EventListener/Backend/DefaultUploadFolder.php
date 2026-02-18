@@ -131,7 +131,7 @@ class DefaultUploadFolder
         ';
 
         $pageRenderer->addJsInlineCode('uploadFolderData_' . $field, $js, false, false, true);
-        $pageRenderer->addJsFile('EXT:default_upload_folder/Resources/Public/JavaScript/test.js');
+        $pageRenderer->addJsFile('EXT:default_upload_folder/Resources/Public/JavaScript/PathInfo.js');
 
     }
 
