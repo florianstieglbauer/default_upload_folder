@@ -28,8 +28,21 @@ Make it possible to configure the default upload folder for a certain TCA column
         # You can set a default year/month/day folder within the set default folder
         tx_news_domain_model_news.dateformat = 1
         tx_news_domain_model_news = 1:news/{Y}/{m}
+
+         # You can use page variables like {title}, {subtitle} or {nav_title} to create dynamic folders
+         tt_content.assets.variableformat = 1
+         tt_content.assets = 1:user_upload/{title}/
     }
 ```
+
+****
+
+**Path Preview**
+
+The extension now displays the destination path directly in the backend for each upload field, providing immediate feedback on where files will be stored.
+
+![backend_01](https://github.com/user-attachments/assets/e4351cda-02a7-4544-ae9f-13b960602c74)
+
 
 **FAQ**
 
